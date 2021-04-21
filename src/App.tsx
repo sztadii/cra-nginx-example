@@ -5,6 +5,10 @@ import './App.css'
 function App() {
   const [apiURL, setApiURL] = useState('')
 
+  // This is just easy setup
+  // Probably will be better to fetch it before we call ReactDOM.render
+  // and persist the config.json content
+  // for example in localStorage, window object or redux store etc
   useEffect(() => {
     fetch('/config.json')
       .then(response => response.json())
