@@ -15,3 +15,17 @@ Enjoy :)
 docker build . -t cra-nginx-example
 docker run -p 4000:5000 -e PORT=5000 -e API_URL=http://localhost:9999 cra-nginx-example
 ```
+
+## Hot to run local version
+Create the `config.json` file inside the `public` folder <br>
+Put the below content to the `config.json` file
+```
+{
+  "API_URL": "http://localhost:1234"
+}
+```
+
+After that run below command
+```
+npm start
+```
