@@ -5,6 +5,13 @@ server {
     index index.html;
 
     location / {
+        # It allows us to modify PUBLIC_URL during the runtime
+        # and still keep a nice performance
+        sub_filter_once off;
+        sub_filter_types text/html;
+        sub_filter 'href="/' 'href="${PUBLIC_URL}/';
+        sub_filter 'src="/' 'src="${PUBLIC_URL}/';
+
         try_files $uri /index.html;
     }
 

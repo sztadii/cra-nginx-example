@@ -13,7 +13,7 @@ Enjoy :)
 ## Hot to run production version
 ```
 docker build . -t cra-nginx-example
-docker run -p 4000:5000 -e PORT=5000 -e API_URL=http://localhost:9999 cra-nginx-example
+docker run -p 4000:5000 -e PORT=5000 -e API_URL=http://localhost:9999 -e PUBLIC_URL= cra-nginx-example
 ```
 
 ## Hot to run local version
