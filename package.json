@@ -21,7 +21,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "format": "prettier --ignore-path .gitignore --write \"**/*.{ts,tsx,js,json,scss}\""
+    "format": "prettier --ignore-path .gitignore --write \"**/*.{ts,tsx,js,json,scss,css}\""
   },
   "eslintConfig": {
     "extends": [
