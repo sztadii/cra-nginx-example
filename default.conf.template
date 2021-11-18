@@ -1,6 +1,5 @@
 server {
     listen ${PORT};
-
     root /var/www/;
 
     location / {
